@@ -7,7 +7,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: "Inter Variable, Segoe UI, sans",
+				sans: "'Inter Variable', sans-serif",
 			},
 			colors: {
 				primary: {

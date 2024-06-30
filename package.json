@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.0.18",
     "preact": "^10.22.0",
     "react-hot-toast": "^2.4.1",
     "uuid": "^10.0.0"
