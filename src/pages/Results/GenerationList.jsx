@@ -12,7 +12,7 @@ const TallIconButton = ({ icon, onClick = undefined }) => {
 
 const GenerationEntry = ({ generation = null, isSelected = false, isGenerating = false, ...props }) => {
 	const selected = isSelected ? "outline outline-3 outline-blue-500 shadow" : ""
-	const baseStyle = "cursor-pointer snap-center hover:opacity-75 min-w-20 w-20 h-20"
+	const baseStyle = "cursor-pointer snap-center hover:opacity-75 min-w-20 !w-20 !h-20"
 
 	return (
 		<>
