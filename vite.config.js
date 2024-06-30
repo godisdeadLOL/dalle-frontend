@@ -7,6 +7,7 @@ export default defineConfig({
 		port: 5180,
 	},
 	plugins: [preact()],
+	base: 'dalle-frontend',
 	resolve: {
 		alias: [{ find: "@", replacement: "/src" }],
 	},
