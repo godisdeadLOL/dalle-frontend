@@ -22,7 +22,7 @@ export const ResultsScreen = ({ selected, setSelected, generations, onDelete, on
 			{generations.length > 0 && (
 				<Screen className={`pt-16 ${className}`}>
 					<>
-						<GenerationGrid generation={generations[selected]} />
+						<GenerationGrid generation={generations[selected]} /> todo uncomment
 						<GenerationInfo onCopy={onCopy} onDelete={onDelete} generation={generations[selected]} />
 
 						<GenerationList generations={generations} selected={selected} setSelected={setSelected} />
