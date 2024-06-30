@@ -1,0 +1,32 @@
+.button {
+	@apply rounded
+    px-4 py-2 
+    flex justify-center items-center text-center
+    text-neutral-600 hover:text-neutral-900 disabled:hover:text-neutral-700
+    disabled:cursor-not-allowed;
+}
+
+.button.plain {
+	@apply bg-white hover:bg-primary-faded active:bg-primary-active;
+}
+
+.button.used {
+	@apply bg-blue-100 pointer-events-none cursor-default disabled:bg-blue-100 text-neutral-900;
+}
+
+.button.primary {
+	@apply bg-blue-50 hover:bg-blue-100 active:bg-blue-200 disabled:bg-neutral-200;
+}
+
+.button.accept {
+	@apply bg-green-500 hover:bg-green-600 active:bg-green-600 text-white;
+}
+
+.button.cancel {
+	@apply bg-red-500 hover:bg-red-600 active:bg-red-600 text-white;
+}
+
+.button.plain_cancel {
+	@apply bg-white hover:bg-blue-50 active:bg-blue-200
+  text-red-700 hover:text-red-600;
+}

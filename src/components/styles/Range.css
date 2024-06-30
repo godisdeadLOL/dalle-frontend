@@ -1,0 +1,6 @@
+input[type='range']::-moz-range-thumb {
+  @apply border-none w-4 h-4 bg-blue-500 rounded-full;
+}
+/* input[type='range']::-webkit-slider-thumb,
+input[type='range']::-moz-range-thumb,
+input[type='range']::-ms-thumb */
