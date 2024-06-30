@@ -11,7 +11,7 @@ const EmptyScreen = ({ className = "" }) => (
 	</Screen>
 )
 
-export const ResultsScreen = ({ onTouched, selected, setSelected, generations, onDelete, onCopy, className = "" }) => {
+export const ResultsScreen = ({ selected, setSelected, generations, onDelete, onCopy, className = "" }) => {
 	// useEffect(() => {
 	// 	if (selected == generations.length - 1) setSelected((value) => value - 1)
 	// }, [generations])
@@ -20,7 +20,7 @@ export const ResultsScreen = ({ onTouched, selected, setSelected, generations, o
 		<>
 			{generations.length == 0 && <EmptyScreen className={className} />}
 			{generations.length > 0 && (
-				<Screen onTouched={onTouched} className={`pt-16 ${className}`}>
+				<Screen className={`pt-16 ${className}`}>
 					<>
 						<GenerationGrid generation={generations[selected]} />
 						<GenerationInfo onCopy={onCopy} onDelete={onDelete} generation={generations[selected]} />

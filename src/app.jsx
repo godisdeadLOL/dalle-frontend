@@ -102,7 +102,7 @@ export function App() {
 
 	return (
 		<>
-			<Toaster />
+			<Toaster containerClassName="mt-12 md:mt-0" />
 			<DeleteModal {...deleteModal} />
 
 			<Navbar onDeleteAll={onDeleteAll} onCleanUp={onCleanUp} mode={mode} setMode={setMode} />
@@ -111,15 +111,8 @@ export function App() {
 
 			{(mode == "gallery" || mode == "generation") && (
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8">
-					<GenerationScreen
-						onTouched={() => setMode("generation")}
-						disabled={generating}
-						generationForm={generationForm}
-						onApply={onGenerate}
-						className={generationStyle}
-					/>
+					<GenerationScreen disabled={generating} generationForm={generationForm} onApply={onGenerate} className={generationStyle} />
 					<ResultsScreen
-						onTouched={() => setMode("gallery")}
 						selected={selected}
 						setSelected={setSelected}
 						onCopy={onCopy}

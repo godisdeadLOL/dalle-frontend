@@ -24,7 +24,7 @@ const StyleHelper = () => (
 	</>
 )
 
-export const GenerationScreen = ({ onTouched, disabled, generationForm, onApply, className = "" }) => {
+export const GenerationScreen = ({ disabled, generationForm, onApply, className = "" }) => {
 	const { values, errors, validate, setValues, register } = generationForm
 
 	const isDalle3 = values.model == "dall-e-3"
@@ -35,7 +35,7 @@ export const GenerationScreen = ({ onTouched, disabled, generationForm, onApply,
 	}, [isDalle3])
 
 	return (
-		<Screen onTouched={onTouched} className={`pt-16 pb-4 ${className}`}>
+		<Screen className={`pt-16 pb-4 ${className}`}>
 			{/* Prompt */}
 			<Label className={!!errors.prompt ? "text-cancel" : ""}>Prompt</Label>
 			<Textarea
